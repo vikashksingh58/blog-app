@@ -11,20 +11,20 @@ This repository houses a fully functional Laravel blog application designed for 
 
 1. **Clone the repository:**
 ```
-bash git clone https://github.com/vikashksingh58/blog-app.git
+git clone https://github.com/vikashksingh58/blog-app.git
 ```
 
 2. **Navigate to the project directory:**
 ```
-bash cd blog-app
+cd blog-app
 ```
 
 3. **Install dependencies::**
 ```
-bash composer install
+composer install
 ```
 ```
-bash npm install
+npm install
 ```
 
 4. **Configure environment variables::**
