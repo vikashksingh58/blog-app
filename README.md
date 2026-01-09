@@ -49,5 +49,5 @@ npm install
    php artisan storage:link
    ```
 10. **Access the application:::**
-   - Open your web browser and visit http://localhost:8000 to explore the blog application.
+   - Open your web browser and visit http://127.0.0.1:8000 to explore the blog application.
  
