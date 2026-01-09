@@ -47,4 +47,33 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    // Check if user is admin
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
+    }
+
+    // Check if user is regular user
+    public function isUser(): bool
+    {
+        return $this->role === 'user';
+    }
+
+    // Relationships
+    public function posts()
+    {
+        return $this->hasMany(Post::class, 'author_id');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function activities()
+    {
+        return $this->hasMany(UserActivity::class);
+    }
+
 }

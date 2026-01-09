@@ -56,4 +56,17 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
         ->name('logout');
+
+    // Route::post('/logout', function (Request $request) {
+    //     \App\Models\UserActivity::create([
+    //         'user_id' => auth()->id(),
+    //         'activity_type' => 'logout',
+    //         'description' => auth()->user()->name . ' logged out',
+    //         'ip_address' => $request->ip(),
+    //         'user_agent' => $request->userAgent(),
+    //     ]);
+
+    //     Auth::logout();
+    //     return redirect('/');
+    // })->name('logout');
 });
