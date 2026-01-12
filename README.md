@@ -40,11 +40,15 @@ npm install
    ```
    php artisan migrate
    ```
+7. **Run database seeder:::**
+   ```
+   php artisan db:seed
+   ```   
 8. **Start the development server:::**
    ```
    php artisan serve
    ```
-8. **Storage link :::**
+9. **Storage link :::**
    ```
    php artisan storage:link
    ```
