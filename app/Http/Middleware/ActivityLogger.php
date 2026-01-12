@@ -64,43 +64,6 @@ class ActivityLogger
         }
     }
 
-    /**
-     * Determine activity type from request
-     */
-    // private function getActivityType(Request $request): string
-    // {
-    //     $method = $request->method();
-    //     $routeName = $request->route()?->getName() ?? '';
-
-    //     if (str_contains($routeName, 'login')) {
-    //         return 'login';
-    //     }
-
-    //     if (str_contains($routeName, 'logout')) {
-    //         return 'logout';
-    //     }
-
-    //     if (str_contains($routeName, 'post')) {
-    //         return match ($method) {
-    //             'POST' => 'post_created',
-    //             'PUT', 'PATCH' => 'post_updated',
-    //             'DELETE' => 'post_deleted',
-    //             default => 'post_viewed',
-    //         };
-    //     }
-
-    //     if (str_contains($routeName, 'comment')) {
-    //         return match ($method) {
-    //             'POST' => 'comment_created',
-    //             'PUT', 'PATCH' => 'comment_updated',
-    //             'DELETE' => 'comment_deleted',
-    //             default => 'comment_viewed',
-    //         };
-    //     }
-
-    //     return 'page_visit';
-    // }
-
     private function getActivityType(Request $request): string
     {
         if ($request->routeIs('login')) return 'login';

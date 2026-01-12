@@ -55,3 +55,21 @@ npm install
 10. **Access the application:::**
    - Open your web browser and visit http://127.0.0.1:8000 to explore the blog application.
  
+    - Admin credential is
+    User email - 
+    ```
+    admin@example.com
+    ```
+    password - 
+    ```
+    123456789
+    ```
+    - Users credentials are 
+    User email -
+    ```
+    userone@example.com and usertwo@example.com
+    ```
+    password - 
+    ```
+    123456789
+    ```
